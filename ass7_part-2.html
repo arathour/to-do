@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<head>
+    <script src="ass7_part-2.js"></script>
+    <title>Login/Register User</title>
+    <link rel="stylesheet" href="ass7_part-2.css">
+</head>
+
+<body>
+    <section class="left-section">
+        <div id="left-form" class="form fade-in-element">
+            <h1>Login</h1>
+            <form name="login" action="" onsubmit=" return validateLogin()" method="post">
+                <input type="text" name="username" class="input-box" placeholder="User Name" required>
+                <br><input type="password" name="password" class="input-box" placeholder="Password" required>
+                <br><input type="submit" value="Login">
+            </form>
+        </div>
+    </section>
+    <hr>
+    <section class="right-section">
+        <div id="right-form" class="form form-hide">
+            <h1>Signup</h1>
+            <form name="signup" action="" onsubmit=" return validateSignup()" method="post">
+                <input type="email" name="user-email" class="input-box" placeholder="Email">
+                <input type="text" name="user-name" class="input-box" placeholder="User Name">
+                <input type="password" name="user-pass" class="input-box" placeholder="Password">
+                <input type="text" name="first-name" class="input-box" placeholder="Enter first name">
+                <input type="text" name="last-name" class="input-box" placeholder="Enter last name"><br>
+                <input type="radio" name="gender" value="male"> Male<br>
+                <input type="radio" name="gender" value="female"> Female<br>
+                <input type="radio" name="role" value="admin"> Admin<br>
+                <input type="radio" name="role" value="operation"> Operation<br>
+                <input type="radio" name="role" value="sale"> Sale<br>
+                <input type="submit" value="Signup">
+
+
+            </form>
+        </div>
+    </section>
+    <hr>
+    <section class="lower-section">
+        <div id="lower-form">
+            <h1>Get list</h1>
+            <input type="submit" value="Get List" onchange=" Getlist ">
+        </div>
+    </section>
+
+
+
+</body>
